@@ -139,3 +139,72 @@ header .container {
 .card-body {
     height: 120px;
 }
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel .card {
+    /* border: none; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel .card:hover {
+    transform: scale(1.05);
+}
+
+.carousel .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+/* .carousel .card-img-top:hover {
+    border-radius: 10px;
+} */
+
+.carousel {
+    position: relative;
+}
+
+/* 
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%; /* Centre parfaitement en hauteur */
+    /* transform: translateY(-50%); Ajuste le centrage */
+    /* width: auto; Évite qu'elles prennent trop de place */
+    /* height: auto; */
+    /* background: none; Enlève tout fond qui pourrait gêner */
+    /* opacity: 1; Plus de visibilité */
+/* } */
+
+/* Décale les flèches vers l'extérieur */
+/* .carousel-control-prev {
+    left: -60px; /* Éloigne la flèche gauche */
+/* } */
+
+/* .carousel-control-next {
+    right: -60px; /* Éloigne la flèche droite */
+/* } */
+
+/* .carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+    width: 40px;
+    height: 40px;
+} */
+
+/* Adaptation mobile */
+/* @media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -40px;
+    }
+
+    .carousel-control-next {
+        right: -40px;
+    }
+} */
