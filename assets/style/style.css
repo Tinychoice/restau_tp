@@ -116,3 +116,17 @@ header .container {
     position: relative;
     z-index: 2;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Permet de redimensionner l'image tout en gardant ses proportions */
+}
+.card {
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    height: 120px; /* Hauteur fixe pour le contenu */
+}
