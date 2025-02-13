@@ -1,15 +1,50 @@
 /* style.css */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Ma+Shan+Zheng&family=Noto+Serif+JP:wght@400;700&display=swap');
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
     background-color: #f8f8f8;
     color: #333;
 }
 
 h1, h2, h3, .navbar-brand {
     font-family: 'Ma Shan Zheng', cursive;
+    font-weight: 400;
 }
+
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #d32f2f;
+}
+
+p, .nav-link {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.row.text-center p {
+    font-family: 'Kaisei Decol', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #b71c1c;
+    font-style: italic;
+}
+
+.row.text-center img {
+    width: 100%; /* Ajuste la largeur pour remplir la colonne */
+    height: 250px; /* Fixe une hauteur identique */
+    object-fit: cover; /* Évite la déformation et garde un bon cadrage */
+    border-radius: 10px; /* Ajoute un effet arrondi pour l'esthétique */
+}
+@media (max-width: 768px) {
+    .row.text-center img {
+        height: auto; /* Laisse la hauteur s’ajuster automatiquement */
+        max-height: 250px; /* Évite que l’image devienne trop grande */
+        object-fit: contain; /* Affiche toute l’image sans la couper */
+    }
+}
+
 
 .navbar {
     background-color: #ff4d4d;
@@ -34,6 +69,7 @@ h1, h2, h3, .navbar-brand {
 .container h2 {
     color: #ff4d4d;
     margin-top: 20px;
+    font-family: 'Ma Shan Zheng', cursive;
 }
 
 .card {
@@ -65,7 +101,6 @@ header {
     background: url('assets/img/background.png') center/cover no-repeat;
 }
 
-/* Ajout d'un pseudo-élément pour l'overlay semi-transparent */
 header::before {
     content: '';
     position: absolute;
@@ -73,11 +108,10 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay noir semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-/* Assurer que le contenu reste visible au-dessus de l'overlay */
 header .container {
     position: relative;
     z-index: 2;
