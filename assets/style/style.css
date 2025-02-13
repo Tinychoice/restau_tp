@@ -54,6 +54,13 @@ p, .nav-link {
     color: white !important;
 }
 
+.navbar-nav .nav-link.active {
+    color: #b71c1c !important; /* Couleur différente pour l'onglet actif */
+    font-weight: bold; /* Met en gras pour plus de visibilité */
+    border-bottom: 2px solid #b71c1c; /* Ajoute une ligne sous l'onglet actif */
+}
+
+
 .hero-section {
     background: url('assets/img/sushi-banner.jpg') no-repeat center center/cover;
     height: 400px;
