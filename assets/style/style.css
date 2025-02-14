@@ -39,12 +39,12 @@ p, .nav-link {
 }
 @media (max-width: 768px) {
     .row.text-center img {
-        height: auto;
-        max-height: 250px;
-        object-fit: contain;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 }
-
 
 .navbar {
     background-color: #ff4d4d;
@@ -98,6 +98,38 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* Section Contact */
+#contact {
+    background-color: #fff;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 77, 77, 1);
+}
+
+#contact h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+#contact i {
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #333;
+}
+
+#contact a:hover {
+    color: #ff4d4d;
+}
+
 
 header {
     position: relative;
